@@ -1,6 +1,4 @@
 Pentartstudio::Application.routes.draw do
-  get "home/index"
-  get "home/services"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -41,7 +39,7 @@ Pentartstudio::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -56,5 +54,9 @@ Pentartstudio::Application.routes.draw do
   #     resources :products
   #   end
   root to: "home#index"
-  get "services" => "home#services"
+  get "services/:article" => "home#services", as: "services"
+  get "trade_gallery" => "home#trade_gallery", as: "trade_gallery"
+  get "exclusive_print" => "home#exclusive_print", as: "exclusive_print"
+  get "contact_us" => "home#contact_us", as: "contact_us"
+  post "contact_req" => "home#save_contact_request", as: "contact_requests"
 end

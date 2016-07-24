@@ -15,4 +15,11 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require owl.carousel
-//= require_tree .
+//= require wow
+//= require bootstrap
+//= require jquery.wmuSlider
+//= require jquery.flexisel
+//= require jquery.magnific-popup
+//= require demo
+
+new WOW().init();

@@ -1,0 +1,17 @@
+<div class="content">
+    <div class="services">
+      <div class="container">
+      <div id="swarupGallery">
+        <ul>
+          <% (1..@pic_count).each do |i| %>
+            <li><%= link_to image_tag(asset_path("dj/#{i}.png")), "javascript: void(0);" %></li>
+          <% end %>
+        </ul>
+        <div id="navHolder"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= content_for :extra_js do %>
+  <%= javascript_include_tag "trade_gallery" %>
+<% end %>

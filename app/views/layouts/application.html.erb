@@ -5,9 +5,9 @@
   </head>
   <body>
     <%= render partial: 'shared/top_navbar' %>
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 100px; margin-bottom: 30px;">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <%= bootstrap_flash %>
         </div>
       </div><!--/row-->
@@ -16,9 +16,9 @@
           <%= yield %>
         </div>
       </div>
-      <footer>
-        <p>&copy; Company 2016</p>
-      </footer>
     </div> <!-- /container -->
+    <%= render partial: 'shared/footer' %>
+    <%= javascript_include_tag "application" %>
+    <%= yield :extra_js %>
   </body>
 </html>

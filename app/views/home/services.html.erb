@@ -1,0 +1,19 @@
+<div class="content">
+  <div class="about">
+    <div class="container">
+      <div class="service_menu">
+        <ul>
+          <% @articles.keys.each_with_index do |article_name, index| %>
+            <li>
+              <%= link_to article_name.singularize.titlecase, services_path(article_name), class: "#{article_name == params[:article] ? 'active' : ''}" %>
+            </li>  
+          <% end %>
+        </ul>
+      </div>
+      <%= render partial: 'home/wmu_slider_content', locals: {images: @articles_data["images"], title: params[:article].singularize.titlecase, description: @articles_data["description"]} %>
+    </div>
+  </div>
+</div>
+<%= content_for :extra_js do %>
+  <%= javascript_include_tag "home" %>
+<% end %>

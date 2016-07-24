@@ -8,11 +8,11 @@
     <a class="navbar-brand" href="#"><img src="<%= asset_url('logo.png') %>"/></a>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-        <li><%= link_to get_top_menu_item_html('home', 'HOME').html_safe, root_path  %></li>
-        <li><%= link_to get_top_menu_item_html('services', 'SERVICES').html_safe, services_path  %></li>
-        <li><%= link_to get_top_menu_item_html('trade_gallary', 'TRADE GALLARY').html_safe, '/path3'  %></li>
-        <li><%= link_to get_top_menu_item_html('exclusive_print', 'EXCLUSIVE PRINT').html_safe, '/path3'  %></li>
-        <li><%= link_to get_top_menu_item_html('contact_us', 'CONTACT US').html_safe, '/path3'  %></li>
+        <li><%= link_to get_top_menu_item_html('home', 'HOME').html_safe, root_path %></li>
+        <li><%= link_to get_top_menu_item_html('services', 'SERVICES').html_safe, services_path("sculptures") %></li>
+        <li><%= link_to get_top_menu_item_html('trade_gallary', 'TRADE GALLARY').html_safe, trade_gallery_path %></li>
+        <li><%= link_to get_top_menu_item_html('exclusive_print', 'EXCLUSIVE PRINT').html_safe, exclusive_print_path %></li>
+        <li><%= link_to get_top_menu_item_html('contact_us', 'CONTACT US').html_safe, contact_us_path %></li>
       </ul>
     </div>
   </div>

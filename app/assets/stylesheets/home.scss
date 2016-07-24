@@ -1,3 +1,294 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.wmuSlider {
+  position: relative;
+  overflow: hidden;
+}
+
+.wmuSliderPrev, .wmuSliderNext {
+  position: absolute;
+  width: 40px;
+  height: 66px;
+  text-indent: -9999px;
+  background: image-url('img-sprite.png') no-repeat;
+  z-index: 2;
+  cursor: pointer;
+  bottom: 8em;
+}
+.wmuSliderPrev {
+  background-position: -240px 0px;
+  left: 0em;
+}
+.wmuSliderNext {
+  background-position: -280px 0px;
+  right: 0em;
+}
+.zoom-img {
+  margin: 0 auto;
+}
+
+.about-in{
+  p{
+    color: #9A9898;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  h6{
+    font-size: 1.6em;
+    line-height: 1.3em;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0 0.3em;
+    color: #000;
+    text-align: center;
+  }
+}
+.about {
+  background: url(../images/banner1.jpg) 0px 0px;
+  width: 100%;
+  min-height: 640px;
+  display: block;
+  text-align: center;
+  padding: 3em 0;
+}
+.service_menu{
+  .active{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #000;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      a{
+        padding: 10px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#swarupGallery {
+  width: 100%;
+  height: auto;
+}
+
+#swarupGallery ul {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.button_holder a{
+ position: absolute;
+  top: 0;
+  right: 40%;
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 18px;
+
+}
+
+#swarupGallery ul li {
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+#swarupGallery ul li:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+#swarupGallery #sscsworld {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#swarupGallery .gallary-row {
+  width: 100%;
+  height: auto;/*position:absolute;*/
+}
+
+#swarupGallery #navHolder {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.spacer {
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  display: block;
+}
+
+.swa-nav {
+  width: auto;
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+#next-swa {
+  right: 0px;
+  top: 0px;
+}
+
+#prev-swa {
+  left: 0px;
+  top: 0px;
+}
+
+.kkk { display: none }
+
+.list-inline-custom{
+list-style:none;
+padding: 10px 0;
+}
+.list-inline-custom li{
+padding: 5px 0;
+}
+.list-inline-custom span{
+margin-left:20px;
+}
+
+.contact-grid input[type="text"] {
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0;
+  background: none;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.contact-left textarea {
+  resize: none;
+  width: 98%;
+  padding: 1em;
+  margin: 1em;
+  outline: none;
+  border: 1px solid #333;
+  background: none;
+}
+
+.contact-left input[type="submit"]:hover {
+  background: #C9A30E;
+}
+
+.contact-left input[type="submit"] {
+  width: 21%;
+  font-size: 1.5em;
+  background: #f5c506;
+  padding: 0.6em 1em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  -webkit-appearance: none;
+}
+
+p.message-para {
+  padding: 0 1em;
+}
+p.your-para, p.message-para {
+  color: #333;
+  margin: 0;
+}
+
+.send {
+  padding: 0 1em;
+}
+
+.list-inline-custom {
+  list-style: none;
+  padding: 10px 0;
+  li{
+    padding: 5px 0;
+  }
+  span{
+    margin-left: 20px;
+  }
+}
+
+h5, .h5 {
+  color: #5f5f5f;
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
+  margin-top: 0px;
+}
+
+.contact-in {
+  padding: 2em 0 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+  margin: 0;
+}
+
+.contact-left h5, .contact-inline h5 {
+  color: #5f5f5f;
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
+  margin-top: 0px;
+  margin-left: 12px;
+}
+
+.contact-ul{
+  li{
+    span:first-child{
+      display: inline-block;
+      min-width: 115px;
+    }
+  }
+}
+
+.footer {
+  background: #4c4c4c;
+}
+.footer a {
+  color: #B2B2B2;
+  text-decoration: none;
+  padding: 20px 0 0 0;
+}
+.footer-left {
+  float: left;
+}
+
+p.footer-grid {
+  float: right;
+  padding: 1.3em 0 0 0;
+}
+
+.footer p {
+  font-size: .9em;
+  color: #B2B2B2;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+<div class="about-in wow bounceIn" data-wow-delay="0.4s">
+  <div class="banner wow bounceIn" data-wow-delay="0.4s"> 
+    <div class="wmuSlider example1">
+      <div class="wmuSliderWrapper">
+        <% images.each do |article_image| %>
+          <article style="position: absolute; width: 100%; opacity: 0;"> 
+            <div class="banner-wrap">
+              <div class="container">
+                <div class="slider_img_holder"><%= image_tag asset_path(article_image), alt: "image", class: "img-responsive zoom-img" %></div> 
+                <div class="clearfix"> </div>
+              </div>
+            </div>
+          </article>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <h6 ><%= title %></h6>
+  <p><%= description %></p>
+</div>
