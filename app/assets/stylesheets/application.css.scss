@@ -1,0 +1,189 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require owl.carousel
+ *= require owl.theme
+ *= require_tree .
+ *= require_self
+ */
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: image-url("banner.jpg") no-repeat 0px 0px;
+}
+.font-regular{
+  text-align: justify;
+  font-size: 18px;
+  color: #8B8B87;
+  line-height: 1.6em;
+}
+
+.navbar-brand{
+  height: 89px;
+  margin-top: 0px;
+  >img{
+    height: 100%;
+    width: auto;
+  }
+}
+
+.navbar-fixed-top{
+  box-shadow: 0px 1px 6px #999;
+}
+
+.nav{
+  &.navbar-nav{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    >li {
+      font-size: 1.2em;
+      a{
+        border-right: 1px solid #D0D0D0;
+      }
+      &:last-child{
+        >a{
+          border-right: none;
+        }
+      }
+      a{
+        span.menu_text{
+          display: inline-block;
+          vertical-align: middle;
+          height: 34px;
+        }
+        span.menu_icon{
+          background-image: image-url("img-sprite.png");
+          width: 35px;
+          height: 36px;
+          display: inline-block;
+          margin-right: 5px;
+          display: inline-block;
+          background-repeat: no-repeat;
+          &.home{
+            background-position: 0px 0px;
+          }
+          &.services{
+            background-position: -37px 0px;
+          }
+          &.trade_gallary{
+            background-position: -137px 0px;
+          }
+          &.exclusive_print{
+            background-position: -106px 0px;
+          }
+          &.contact_us{
+            background-position: -73px 0px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 768px){
+  .navbar-nav>li>a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+}
+
+#video-wrapper{
+  position: relative;
+  padding-top: 0px;
+  height: auto;
+  iframe{
+    border: 0;
+    min-height: 368px;
+    width: 100%;
+  }  
+}
+
+.margin-top-20{
+  margin-top: 20px;
+}
+.service-container{
+  margin-bottom: 10px;
+  >div{
+    background: image-url("banner1.jpg") no-repeat 0px 0px;
+    display: block;
+    background-size: cover;
+    a{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    span{
+      font-size: 28px;
+      color: #000;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 100;
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 1200px){
+  .service-container{
+    padding-right: 0px;
+    padding-left: 0px;
+    &:last-child{
+      padding-right: 15px;
+    }
+    &:first-child{
+      padding-left: 15px;
+      >div{
+        border-left: 1px solid #D0D0D0;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    >div{
+      background: image-url("banner1.jpg") no-repeat 0px 0px;
+      display: block;
+      background-size: cover;
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      span{
+        font-size: 28px;
+        color: #000;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 100;
+        text-align: center;
+      }
+    }
+    border-right: 1px solid #D0D0D0;
+  }
+}
+
+.home-carousel-container{
+  padding-right: 0px;
+  margin-top: 20px;
+}
+
+.owl-carousel{
+  img{
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+
+.plr-10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bg-light{
+  background-color: #fff;
+}
