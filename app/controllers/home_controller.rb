@@ -32,7 +32,6 @@ class HomeController < ApplicationController
   end
 
   def contact_us
-    flash[:notice] = "Thanks for contacting us, your request will be processed soon!"
     @contact_request = ContactRequest.new
   end
 
